@@ -25,8 +25,8 @@ module.exports = exports = function(webot){
     handler: function(info){
       var reply = {
         title: '感谢你收听webot机器人',
-        pic: 'https://raw.github.com/node-webot/webot-example/master/qrcode.jpg',
-        url: 'https://github.com/node-webot/webot-example',
+        pic: 'https://raw.github.com/McDaddy/webot-example/master/pic/tmac.jpg',
+        url: 'https://github.com/McDaddy/webot-example',
         description: [
           '建议你试试这几条指令:',
             '1. game : 玩玩猜数字的游戏吧',

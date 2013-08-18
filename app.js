@@ -11,10 +11,10 @@ var app = express();
 var wx_token = process.env.WX_TOKEN || 'cwt123456';
 
 // remove this test code in production environment
-try {
+//try {
   // for submodulized repository only
-  webot = require('../');
-} catch (e) {}
+  //webot = require('../');
+//} catch (e) {}
 
 // app.use(express.query());
 app.use(express.cookieParser());
@@ -23,7 +23,7 @@ app.use(express.cookieParser());
 app.use(express.session({ secret: 'abced111', store: new express.session.MemoryStore() }));
 
 // 启动机器人, 接管 web 服务请求，默认会监听根目录请求
-webot.watch(app, { token: wx_token, path: '/wechat' });
+webot.watch(app, { token: wx_token, path: '/' });
 
 // 载入路由规则
 require('./rules')(webot);
