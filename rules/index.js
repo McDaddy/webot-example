@@ -322,9 +322,7 @@ module.exports = exports = function(webot){
     pattern: /^news\s*(\d*)$/,
     handler: function(info){
       var reply = [
-        {title: '微信机器人', description: '微信机器人测试帐号：webot', pic: 'https://raw.github.com/node-webot/webot-example/master/qrcode.jpg', url: 'https://github.com/node-webot/webot-example'},
-        {title: '豆瓣同城微信帐号', description: '豆瓣同城微信帐号二维码：douban-event', pic: 'http://i.imgur.com/ijE19.jpg', url: 'https://github.com/node-webot/weixin-robot'},
-        {title: '图文消息3', description: '图文消息描述3', pic: 'https://raw.github.com/node-webot/webot-example/master/qrcode.jpg', url: 'http://www.baidu.com'}
+        {title: '微博链接', description: '图片微博链接', pic: 'https://raw.github.com/McDaddy/webot-example/master/pic/ali.JPG', url: 'http://weibo.com/mcdaddycwt'}
       ];
       // 发送 "news 1" 时只回复一条图文消息
       return Number(info.param[1]) == 1 ? reply[0] : reply;
